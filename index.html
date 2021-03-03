@@ -2,8 +2,8 @@
 <body>
 <style>
 body{
-    background-color: #ffffff;
-    color: #626262;
+    background-color: #2f3437;
+    color: white;
 }
     </style>
 <div id="contain_moon"
@@ -20,10 +20,10 @@ onclick = "gfg_Run()">
 <div style="font-weight:bold"></div>
 <div style="margin-bottom:-15px;padding:50px 10px 25px;filter:drop-shadow(0 0 19px hsl(360,100%,100%))"></div>
 <div>.</div>
-<div style="font-size:large"></div>
+<div style="font-size:small"></div>
 
 </body>
-<script>(function(){var d=new Date().getDate();var m=document.querySelectorAll("#contain_moon div");var a=new XMLHttpRequest();var url="https://www.icalendar37.net/lunar/api/?lang=en&month="+(new Date().getMonth()+1)+"&year="+(new Date().getFullYear())+"&size=100&lightColor=rgb(217,217,217)&shadeColor=rgb(70,70,70)&t&LDZ="+new Date(new Date().getFullYear(),new Date().getMonth(),1)/1000+"";m[1].style.height="100px";a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var b=JSON.parse(a.responseText);m[1].innerHTML=b.phase[d].svg;if(typeof moon_widget_loaded=="function")moon_widget_loaded(b);m[2].innerHTML=b.phase[d].npWidget;m[3].innerHTML=""+b.nextFullMoon}};a.open("GET",url,true);a.send()})()
+<script>(function(){var d=new Date().getDate();var m=document.querySelectorAll("#contain_moon div");var a=new XMLHttpRequest();var url="https://www.icalendar37.net/lunar/api/?lang=en&month="+(new Date().getMonth()+1)+"&year="+(new Date().getFullYear())+"&size=100&lightColor=rgb(217,217,217)&shadeColor=rgb(70,70,70)&t&LDZ="+new Date(new Date().getFullYear(),new Date().getMonth(),1)/1000+"";m[1].style.height="100px";a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var b=JSON.parse(a.responseText);m[1].innerHTML=b.phase[d].svg;if(typeof moon_widget_loaded=="function")moon_widget_loaded(b);m[2].innerHTML=b.phase[d].npWidget}};a.open("GET",url,true);a.send()})()
 
             function changeBackgroundColor(color) { 
                 document.body.style.background = color; 
@@ -35,7 +35,7 @@ onclick = "gfg_Run()">
               
               
             function gfg_Run() { 
-                changeBackgroundColor('#2f3437'); 
-                changeTextColor('white'); 
+                changeBackgroundColor('white'); 
+                changeTextColor('#626262'); 
             }          
 </script>
